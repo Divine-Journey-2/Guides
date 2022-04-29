@@ -20,10 +20,14 @@ A few tips:
 4. Add images and gifs!
 
 ## Making your Guide
+
 To begin with, you will want to [Fork the Repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks) via the Fork button in the top right of Github.
-Then, you want to create a new branch - either through [Git](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) directly, or through the [Github Website](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository), or some other tool, such as [Github Desktop](https://desktop.github.com/) or [VSCode](https://code.visualstudio.com/docs/editor/versioncontrol
+
+Then, you want to create a new branch - either through [Git](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) directly, or through the [Github Website](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository), or some other tool, such as [Github Desktop](https://desktop.github.com/) or [VSCode](https://code.visualstudio.com/docs/editor/versioncontrol)
+
 Next, create your guide file (must be a markdown file) and folder in files if you want to add external media. Once you have done all you want, Commit your changes to the branch. You then want to Push the branch from your computer out to where it can be accessed by Github.
 Once you have made the changes you want, open a [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) to merge your changes from your Branch on your Fork to Divine-Journey-2/Guides.
+
 A brief look will follow to make sure everything lines up, and then it will be merged into the repository!
 
 
