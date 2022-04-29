@@ -1,0 +1,29 @@
+name: Typo
+description: There is a typo / misspelling / grammatical error somewhere.
+labels: ["typo"]
+body:
+  - type: markdown
+    attributes:
+      value: Before submitting an issue, check if your request has been submitted before. If it has, please don't submit a duplicate.
+  - type: input
+    id: guide-name
+    attributes:
+      label: Guide name
+      description: Name of the guide in which the typo appears.
+      placeholder: "Example: DemoGuide"
+    validations:
+      required: true
+  - type: textarea
+    id: typo-location
+    attributes:
+      label: What is the current text?
+      description: Copy the sentence/paragraph/etc in which the typo occurs.
+    validations:
+      required: true
+  - type: textarea
+    id: exact-fix
+    attributes:
+      label: Exact fix
+      placeholder: "Example: It should be 'assignments' not 'assingments'. / It should be 'that you used to make', not 'that you used to made'."
+    validations:
+      required: true

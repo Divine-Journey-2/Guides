@@ -1,0 +1,29 @@
+name: Typo
+description: There is a typo / misspelling / grammatical error somewhere.
+labels: ["error"]
+body:
+  - type: markdown
+    attributes:
+      value: Before submitting an issue, check if your request has been submitted before. If it has, please don't submit a duplicate.
+  - type: input
+    id: guide-name
+    attributes:
+      label: Guide name
+      description: Name of the guide in which the error appears.
+      placeholder: "Example: DemoGuide"
+    validations:
+      required: true
+  - type: textarea
+    id: error-location
+    attributes:
+      label: What is the current text?
+      description: Copy the sentence/paragraph/etc in which the error exists.
+    validations:
+      required: true
+  - type: textarea
+    id: exact-fix
+    attributes:
+      label: Why is this incorrect?
+      description: Be descriptive
+    validations:
+      required: true
