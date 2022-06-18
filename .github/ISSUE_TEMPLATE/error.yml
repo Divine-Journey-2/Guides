@@ -1,5 +1,5 @@
 name: Error
-description: There is a typo / misspelling / grammatical error somewhere.
+description: There is a factual error somewhere.
 labels: ["error"]
 body:
   - type: markdown
