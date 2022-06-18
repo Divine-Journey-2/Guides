@@ -1,4 +1,4 @@
-name: Typo
+name: Error
 description: There is a typo / misspelling / grammatical error somewhere.
 labels: ["error"]
 body:
