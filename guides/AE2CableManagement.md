@@ -1,6 +1,6 @@
 Author: Shadoyama#4166
 
-# The basics
+# The Basics
 
 In this section, I'll be going over the basics of cabling and channels, just to make sure everyone understands or is on the same page as I am. If you understand the different types of cables, channels, and other basic stuff, this can be skipped.
 
@@ -54,7 +54,7 @@ The base purpose of a P2P channel is meant to be a logical management. This guid
 
 ## Actual Cable Management
 
-Now, the way I described that P2P is not the way we will be using P2P. The way we will be using P2P is to condense channels, specifically anywhere from the normal 32 channels on a line, upwards to 1024 channels on a single line. The way this works is a little complicated, so here is an image, in which I'll explain what is going on.
+Now, the way I described that P2P is not the way we will be using P2P. The way we will be using P2P is to condense channels to reduce the amount of wiring necessary to run around the base, specifically anywhere from the normal 32 channels on a line, upwards to 1024 channels on a single line. The way this works is a little complicated, so here is an image, in which I'll explain what is going on.
 
 ![P2PExample](files/AE2CableManagement/P2PExample.png)
 
@@ -66,4 +66,4 @@ This can best be shown in the following screenshot, in which a total of 1024 cha
 
 Keep in mind, this is only using 2 sides of the controller, when on the P2P network there was 32 sides of the controller available. You can also still add an additional 16 from the other two sides that were not connected, and also the sides that are in the inside of the controller.
 
-However, as noted earlier, it is **upwards** of 1024 channels, not always. Depending on how many times you access a single dense cable connected to the controller will affect the maximum condensing per channel. If you use 1 input and 1 output, you successfully get a 32:1 channel ratio. If you use 2 outputs for every input, you would have a 16:1, resulting in 512 channels on single dense cable.
+However, as noted earlier, it is **upwards** of 1024 channels, not always. Depending on how many times you access a single dense cable connected to the controller will affect the maximum condensing per channel. If you use 1 input and 1 output, you successfully get a 32:1 channel ratio. If you use 2 outputs for every input, you would have a 16:1, resulting in 512 channels on single dense cable. This ultimately should save you a lot of cabling needed to be done in order to connect the base.
