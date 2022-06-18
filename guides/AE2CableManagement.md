@@ -19,7 +19,7 @@ EnderIO has both the ME Smart Cable and ME Dense Smart Cable, but they are both 
 
 Here are what each cable/conduit is typically used for, and just general knowledge about the cables/conduits:
 
-- Quartz Fibers is the only one out of the six that do not transfer channels, but rather just power. This makes them good for both powering P2P networks and subnetworks, both of which will be explained later on. They also aren't an individual cable however, as they are an attachment to a cable (examples in picture below). They also don't take up a block when connected to other cables.
+- Quartz Fibers is the only one out of the six that do not transfer channels, but rather just power. This makes them good for both inscribers and subnetworks, in which subnetworks will be explained later on. They also aren't an individual cable however, as they are an attachment to a cable (as seen in the picture below). They also don't take up a block when connected to other cables.
 - ME Glass Cables is a cable that transmits both power and channels, with the maximum amount of channels allowed being 8 channels. These are very similar to the next cable, and can be interchanged *almost* freely.
 - ME Smart Cables is very similar to Glass cables, however they display the amount of channels shown on the cable, with each line representing one channel. These, alongside the previous cable, are the only ones you can use to connect any AE2 non-full block to the system (Export bus, storage bus, etc...)
 - ME Dense Smart Cable is the same as the previous, however they can hold up to 32 channels on a single line. These cables however can only connect to devices that take up a full block (The full-block variant of ME interfaces, Molecular Assemblers, etc...)
@@ -48,7 +48,9 @@ P2P channels have 6 different types: FE, Light, Redstone, Fluid, Item, and ME. F
 
 **DO NOT USE THE ADVANCED MEMORY CARD, THIS IS KNOWN TO CAUSE CRASHES**
 
-P2Ps by themself do not do anything. A P2P network is separate from the main network, in the regard that they don't directly interact with one another. Storages on the main network *technically* are not visible on the P2P network, but you should ideally not need to use the P2P network for storage or autocrafting.
+P2Ps by themself do not do anything. They can are often times used alongside a subnetwork, however it is possible to route it on a single network. I will personally be showing it as if they do use a sepearate network, as I believe that looks better, and helps for demonstration purposes.
+
+A subnetwork would be any network that is not the main one that works alongside the main one, most likely to perform a specific case. The subnetwork is separate from the main network, meaning autocrafting, security, storage, and controllers are separate from one another.
 
 The base purpose of a P2P channel is meant to be a logical management. This guide isn't going to be using that much, but here is a website with a description of how the P2P was designed, and what purpose it is intended to have: https://appliedenergistics.github.io/features/me-network/channels
 
@@ -58,12 +60,12 @@ Now, the way I described that P2P is not the way we will be using P2P. The way w
 
 ![P2PExample](files/AE2CableManagement/P2PExample.png)
 
-In the above screenshot, each dense cable has their own P2P channel ID, in which none of them share the same connection. However, now that they are all being transported over the P2P network, each dense cable is equivalent to 1 channel on the smart cables. You can run those smart cables either into a dense cable, or use another controller since the P2P network is separate from the main network.
+In the above screenshot, each dense cable has their own P2P channel ID, in which none of them share the same connection. However, now that they are all being transported over the subnetwork, each dense cable is equivalent to 1 channel on the smart cables. You can run those smart cables either into a dense cable, or use another controller since the subnetwork is separate from the main network.
 
 This can best be shown in the following screenshot, in which a total of 1024 channels will be accessible, and 64 channels being actively used using P2P.
 
 ![P2PCondensingCables](files/AE2CableManagement/P2PCondensingCables.png)
 
-Keep in mind, this is only using 2 sides of the controller, when on the P2P network there was 32 sides of the controller available. You can also still add an additional 16 from the other two sides that were not connected, and also the sides that are in the inside of the controller.
+Keep in mind, this is only using 2 sides of the controller, when on the subnetwork there was 32 sides of the controller available. You can also still add an additional 16 from the other two sides that were not connected, and also the sides that are in the inside of the controller.
 
 However, as noted earlier, it is **upwards** of 1024 channels, not always. Depending on how many times you access a single dense cable connected to the controller will affect the maximum condensing per channel. If you use 1 input and 1 output, you successfully get a 32:1 channel ratio. If you use 2 outputs for every input, you would have a 16:1, resulting in 512 channels on single dense cable. This ultimately should save you a lot of cabling needed to be done in order to connect the base.
