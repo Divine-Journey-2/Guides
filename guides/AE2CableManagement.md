@@ -8,10 +8,12 @@ In this section, I'll be going over the basics of cabling and channels, just to 
 
 This section will talk about the different types of cable and the advantages and disadvantages of using each type.
 
-Firstly, there are 4 different cables from Applied Energistics, and 2 from Ender IO. Here are the following from AE2:
+Firstly, there are 6 different cables from Applied Energistics, and 2 from Ender IO. Here are the following from AE2:
 - Quartz Fiber
 - ME Glass Cable
+- ME Covered Cable
 - ME Smart Cable
+- ME Dense Covered Cable
 - ME Dense Smart Cable
 
 EnderIO has both the ME Smart Cable and ME Dense Smart Cable, but they are both conduits, allowing for energy conduits and any other conduit from EnderIO to run alongside it in the same block. However, as I'll note in the next section, they have differences.
