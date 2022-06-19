@@ -21,14 +21,16 @@ Here are what each cable/conduit is typically used for, and just general knowled
 
 - Quartz Fibers is the only one out of the six that do not transfer channels, but rather just power. This makes them good for both inscribers and subnetworks, in which subnetworks will be explained later on. They also aren't an individual cable however, as they are an attachment to a cable (as seen in the picture below). They also don't take up a block when connected to other cables.
 - ME Glass Cables is a cable that transmits both power and channels, with the maximum amount of channels allowed being 8 channels. These are very similar to the next cable, and can be interchanged *almost* freely.
-- ME Smart Cables is very similar to Glass cables, however they display the amount of channels shown on the cable, with each line representing one channel. These, alongside the previous cable, are the only ones you can use to connect any AE2 non-full block to the system (Export bus, storage bus, etc...)
-- ME Dense Smart Cable is the same as the previous, however they can hold up to 32 channels on a single line. These cables however can only connect to devices that take up a full block (The full-block variant of ME interfaces, Molecular Assemblers, etc...)
-- Both of the EnderIO conduits serve the same purpose as the ME Smart Cables and ME Dense Cables, however the main differences are that you can not visually see the channels on the cable, and the normal ME Conduit can only connect to devices that take up a full block.
+- ME Covered Cables are the same to the glass cables, just with a different look.
+- ME Smart Cables is very similar to the covered cables, however they display the amount of channels shown on the cable, with each line representing one channel. These, alongside the previous cables, are the only ones you can use to connect any AE2 non-full block to the system (Export bus, storage bus, etc...)
+- ME Dense Covered Cables can hold up to 32 channels, can not see the amount of channels on the cable, and can only connect to devices that take up a full block (The full-block variant of ME interfaces, Molecular Assemblers, etc...).
+- ME Dense Smart Cable is the same as the previous, however you can see the amount of channels being used on it.
+- Both of the EnderIO conduits serve the same purpose as the ME Covered Cables and ME Dense Covered Cables, however the only notable difference is that the normal ME Conduit can only connect to devices that take up a full block rather than non-full blocks.
 
 Here is a picture to visually show the different cables/conduits, in order that was described.
 ![AE2CablesSideBySide](files/AE2CableManagement/AE2CablesSideBySide.png)
 
-Do note that Glass Cables, Smart Cables, and Dense Smart Cables all have different colored variants. Besides aesethics, different colored cables can not connect to each other, however 'Fluix' Cables can connect to any colored cable, which is how you can connect all the different colored cables together.
+Do note that Glass Cables, Covered Cables, Smart Cables, Dense Covered Cables, and Dense Smart Cables all have different colored variants. Besides aesethics, different colored cables can not connect to each other, however 'Fluix' Cables can connect to any colored cable, which is how you can connect all the different colored cables together.
 
 ## Channels
 
@@ -36,7 +38,9 @@ The first thing, and a very large thing that needs to be understand is how chann
 
 Channels can only be 'created' by a ME Controller. Each side of the controller can support up to 32 channels, with there being no way to increase the amount of channels per side. You can add multiple controllers to a single network, however they need to all be directly connected to one another, and can not exceed the size of a 7x7x7 block. 
 
-Channels are fairly simple. Any device that serves any purpose within a network, whether it be exporting items, importing items, acting as an interface to the network, whatever it may be, will use a channel. This means if you were to use a Glass Cable to power inscribers, the inscribers will not use channels, as they do not interact with the system besides with power. However, connecting to a 'blank' interface (an interface with nothing in it) will still count as a channel.
+Channels are fairly simple. Any device that directly interacts with the storage of the network, whether it be exporting items, importing items, acting as an interface to the network, whatever it may be, will use a channel. This means if you were to use a glass cable to power inscribers, the inscribers will not use channels, as they do not interact with the system besides with power. However, connecting to a 'blank' interface (an interface with nothing in it) will still count as a channel.
+
+Do note that molecular assemblers do not directly take items from the network nor import items items into the network, as it uses the interface as a proxy. Therefore, molecular assemblers do not use a channel.
 
 # Cable Management
 
