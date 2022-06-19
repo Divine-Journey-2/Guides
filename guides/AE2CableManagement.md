@@ -38,7 +38,7 @@ Do note that Glass Cables, Covered Cables, Smart Cables, Dense Covered Cables, a
 
 The first thing, and a very large thing that needs to be understand is how channels work, when they are used, and how to get more, which I will cover in this section.
 
-Channels can only be 'created' by a ME Controller. Each side of the controller can support up to 32 channels, with there being no way to increase the amount of channels per side. You can add multiple controllers to a single network, however they need to all be directly connected to one another, and can not exceed the size of a 7x7x7 block. 
+By default, a network only has 8 channels without a ME controller. However, when a controller is added, each side of the controller can support up to 32 channels, with there being no way to increase the amount of channels per side. You can add multiple controllers to a single network, however they need to all be directly connected to one another, and can not exceed the size of a 7x7x7 block. 
 
 Channels are fairly simple. Any device that directly interacts with the storage of the network, whether it be exporting items, importing items, acting as an interface to the network, whatever it may be, will use a channel. This means if you were to use a glass cable to power inscribers, the inscribers will not use channels, as they do not interact with the system besides with power. However, connecting to a 'blank' interface (an interface with nothing in it) will still count as a channel.
 
@@ -46,27 +46,29 @@ Do note that molecular assemblers do not directly take items from the network no
 
 # Cable Management
 
-Alright, now to the fun stuff: P2Ps and cable management. I'll go over P2Ps first, as they are required for cable management.
+Alright, now to the fun stuff: P2Ps and cable management. I'll go over P2Ps first, as they aren't necessarily required for cable management, but if you want to have good cable management you will want to use P2Ps.
 
 ## P2P
 
-P2P channels have 6 different types: FE, Light, Redstone, Fluid, Item, and ME. For this guide, we will only use the ME P2P, as those are the only ones that will interact with the ME system itself. To bind a P2P to another, you will first need a memory card and then you need to shift right-click on the input cable, and then right-click on the output P2P.
+P2P channels have 6 different types: FE, Light, Redstone, Fluid, Item, and ME. For this guide, we will only use the ME P2P, as those are the only ones that will interact with the ME system itself. To bind a P2P to another, you will first need a memory card and then you need to shift right-click on the input cable, and then right-click on the output P2P(s).
 
 **DO NOT USE THE ADVANCED MEMORY CARD, THIS IS KNOWN TO CAUSE CRASHES**
 
 P2Ps by themself do not do anything. They can are often times used alongside a subnetwork, however it is possible to route it on a single network. I will personally be showing it as if they do use a sepearate network, as I believe that looks better, and helps for demonstration purposes.
 
-A subnetwork would be any network that is not the main one that works alongside the main one, most likely to perform a specific case. The subnetwork is separate from the main network, meaning autocrafting, security, storage, and controllers are separate from one another.
+A subnetwork would be any network that is not the main one that works alongside the main one, most likely to perform a specific case. The subnetwork is separate from the main network, meaning that in most cases autocrafting, security, storage, and controllers are separate from one another, however it is possible that storage is shared between the subnetwork and the main network. Do note that both the main network and subnetwork need power, whether it be a quartz fiber to power the other or energy acceptors for both networks.
 
-The base purpose of a P2P channel is meant to be a logical management. This guide isn't going to be using that much, but here is a website with a description of how the P2P was designed, and what purpose it is intended to have: https://appliedenergistics.github.io/features/me-network/channels
+P2Ps serve 2 purposes in a network, with what they serve mainly dependant on what is needed from the system. This guide will only cover one of the purposes (which is for cable management), and the other can be read more about at this link: https://appliedenergistics.github.io/features/me-network/channels.
 
 ## Actual Cable Management
 
 Now, the way I described that P2P is not the way we will be using P2P. The way we will be using P2P is to condense channels to reduce the amount of wiring necessary to run around the base, specifically anywhere from the normal 32 channels on a line, upwards to 1024 channels on a single line. The way this works is a little complicated, so here is an image, in which I'll explain what is going on.
 
+(The following screenshot uses dense cables, but are not required. You can directly plug the P2P into the controller, this just allows you to visually see how many channels are used on that particular side)
 ![P2PExample](files/AE2CableManagement/P2PExample.png)
 
 In the above screenshot, each dense cable has their own P2P channel ID, in which none of them share the same connection. However, now that they are all being transported over the subnetwork, each dense cable is equivalent to 1 channel on the smart cables. You can run those smart cables either into a dense cable, or use another controller since the subnetwork is separate from the main network.
+
 
 This can best be shown in the following screenshot, in which a total of 1024 channels will be accessible, and 64 channels being actively used using P2P.
 
