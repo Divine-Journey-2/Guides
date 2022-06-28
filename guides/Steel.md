@@ -4,7 +4,7 @@ Steel is one of the most important resources throughout earlygame. You will need
 
 ### Blast Furnace
 
-The first way of obtaining steel is thorugh the Blast Furnace, from Chapter 4. There is no way to automate the basic blast furnace, however, it's successor, the Reinforced Blast Furnace, is automatable.
+The first way of obtaining steel is thorugh the Blast Furnace, from Chapter 4. There is no way to automate the basic blast furnace, however, its successor, the Reinforced Blast Furnace, is automatable.
 
 ![Improved Blast Furnace](/guides/files/Steel/blastfurnace.png)
 
