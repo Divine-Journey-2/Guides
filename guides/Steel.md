@@ -1,4 +1,4 @@
-###### Steel
+# Steel
 
 Steel is one of the most important resources throughout earlygame. You will need a lot of it, so it's useful to try to make a system to get it quickly.
 
