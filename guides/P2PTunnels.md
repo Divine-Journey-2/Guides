@@ -11,7 +11,7 @@ Channels are provided to blocks from the shortest path possible, so make sure yo
 
 ![2022-06-18_10 58 49](https://user-images.githubusercontent.com/100072467/174430682-33688f0f-b8f1-4f58-8872-d38801c06e62.png)
 
-**Colored cables** don't connect to different colored pipes but do connect to fluix/uncolored pipes. **Cable anchors** prevent cables from connecting from a specific place.
+**Colored cables** don't connect to different colored cables but do connect to fluix/uncolored cables. **Cable anchors** prevent cables from connecting from a specific place.
 
 ![2022-06-18_11 01 56](https://user-images.githubusercontent.com/100072467/174430704-fdee4dc1-19e4-4116-801c-1d286dd1a959.png)
 
