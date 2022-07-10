@@ -23,7 +23,7 @@ P2P (stands for point-to-point) tunnels act like a link between two points conne
 ![2022-06-18_11 18 54](https://user-images.githubusercontent.com/100072467/174430735-4702ca6e-efb3-4847-9234-53a5ad52ea55.png)
 Here, we have a P2P tunnel carrying the light of the torch on the left side to right side.
 
-In order to function, they too need a channel each, but **they can't use the channels they get from the input side**, so you'll need to make sure there is a channel for each one given to them from the back. There is a misconception that they compress channels, but that's untrue. Instead, they carry channels while needing a channel each to function.
+In order to function, they too need a channel each, but **they can't use the channels they get from the input side**, so you'll need to make sure there is a channel for each one given to them from the back. There is a misconception that they compress channels, but that's untrue. Instead, they carry channels while each one needing a channel to function, just like most things in AE2.
 
 ![2022-06-18_11 09 47](https://user-images.githubusercontent.com/100072467/174430838-e95f390a-90c5-41cd-8d5e-1f855863871d.png)
 Here, the channels are sent to the interfaces with P2P channels. The path channels take seems longer at first glance, but keep in mind that P2P tunnels are pretty much links between two points.
