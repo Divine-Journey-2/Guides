@@ -41,7 +41,7 @@ To function, **every network needs power**. To supply your subnetwork with that 
 
 a) plug your power to your ME controller.
 
-b) use an *energy acceptor* and plug your power through it.
+b) use an *energy acceptor* and plug your power from there.
         
 c) connect your subnetwork to your main with the use of **quartz fibers**. They'll let energy pass through but not channels, meaning two networks will still be separated.
 
